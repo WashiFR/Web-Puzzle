@@ -1,0 +1,7 @@
+{
+  "name": "web-puzzle",
+  "version": "1.0.0",
+  "dependencies": {
+    "ol": "latest"
+  }
+}
