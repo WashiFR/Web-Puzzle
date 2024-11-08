@@ -11,7 +11,26 @@
 </head>
 <body>
 
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Web Puzzle</h5>
+                <button class="close" onclick="document.querySelector('.modal').classList.add('hidden');">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Résolvez le puzzle en plaçant tous les arrondissements de la région au bon endroit.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" onclick="document.querySelector('.modal').classList.add('hidden');">Compris</button>
+            </div>
+        </div>
+    </div>
+
     <div id="map"></div>
+
+    <div class="btn-container">
+        <button id="zoom-to-puzzle" class="btn">Zoom sur le puzzle</button>
+    </div>
 
     <!-- Importe la dernière version de OpenLayers -->
     <script src="https://cdn.jsdelivr.net/npm/ol@latest/dist/ol.js"></script>

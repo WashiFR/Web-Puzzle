@@ -42,4 +42,8 @@ export function startGame(map, outlinePuzzleSource, piecesPuzzleSource) {
 
         randomizePuzzlePiecesPos(features);
     });
+
+    document.getElementById('zoom-to-puzzle').onclick = function() {
+        zoomToCenterOfPuzzle(map, outlinePuzzleSource);
+    }
 }
